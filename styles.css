@@ -1,0 +1,236 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000007;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(45deg, #f36302 0%, #fa744e 99%, #e7795b 100%);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #f3f3f3;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #fdfdfd;
+}
+
+.img-fluid {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 100px; /* ajusta el ancho máximo de la imagen */
+    height: 200px; /* ajusta la altura automáticamente */
+    width: 200px;
+    object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
+    display: block;
+    margin: 0 auto;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.btn-primary {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #23527c;
+    border-color: #23527c;
+}
+
+/* Estilos para la navegación */
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+/* Estilos para la sección de habilidades */
+
+.skills {
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    margin-bottom: 1rem;
+}
+
+.skills li::before {
+    content: "✓";
+    font-size: 1.5rem;
+    color: #337ab7;
+    margin-right: 1rem;
+}
+
+/* Estilos para la sección de proyectos */
+
+.projects {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.projects .row {
+    margin-bottom: 2rem;
+}
+
+.projects .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+.projects img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección de contacto */
+
+.contact {
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.contact button[type="submit"] {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #23527c;
+    border-color: #23527c;
+}
+
+/* Estilos para el fondo interactivo */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    
+}
+
+.float-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Cambiado de left a right */
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.float-icon:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.float-icon i {
+    font-size: 24px;
+}
+
+
+/* Dropdown styles */
+.dropdown-toggle {
+    border-radius: 10px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño máximo del video */
+    height: auto;
+    border-radius: 8px; /* Opcional: bordes redondeados para el video */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra alrededor del video */
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 300%;
+    max-width: 1200px; /* Ajusta el tamaño máximo del video */
+    height: auto;
+    border-radius: 15px; /* Opcional: bordes redondeados para el video */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra alrededor del video */
+}
+
+.dropdown-menu {
+    background-color: #440000;
+}
