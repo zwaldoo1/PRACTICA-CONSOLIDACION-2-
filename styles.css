@@ -230,6 +230,14 @@ p {
     border-radius: 15px; /* Opcional: bordes redondeados para el video */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra alrededor del video */
 }
+#message-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+    border-radius: 5px;
+}
 
 .dropdown-menu {
     background-color: #440000;
