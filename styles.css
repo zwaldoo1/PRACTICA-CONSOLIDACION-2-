@@ -37,8 +37,8 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     max-width: 100px; /* ajusta el ancho máximo de la imagen */
-    height: 200px; /* ajusta la altura automáticamente */
-    width: 200px;
+    height: 230px; /* ajusta la altura automáticamente */
+    width: 230px;
     object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
     display: block;
     margin: 0 auto;
@@ -285,4 +285,11 @@ body {
 
 .dropdown-menu {
     background-color: #440000;
+}
+.carousel-inner img {
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    height: 150px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
+    border-radius: 50%; /* Mantiene la forma ovalada */
+    margin: 0 auto; /* Centra la imagen en su contenedor */
 }
