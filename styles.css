@@ -287,9 +287,14 @@ body {
     background-color: #440000;
 }
 .carousel-inner img {
-    width: 250px; /* Ajusta el ancho según sea necesario */
+    width: 50px; /* Ajusta el ancho según sea necesario */
     height: 150px; /* Ajusta la altura según sea necesario */
     object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
     border-radius: 50%; /* Mantiene la forma ovalada */
     margin: 0 auto; /* Centra la imagen en su contenedor */
+}
+.carousel-item img {
+    width: 10%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
 }
