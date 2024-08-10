@@ -216,19 +216,21 @@ p {
     border-radius: 8px; /* Opcional: bordes redondeados para el video */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra alrededor del video */
 }
+/* Estilos para el contenedor del video */
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Mayor margen inferior */
 }
 
 .video-container iframe {
-    width: 300%;
-    max-width: 1200px; /* Ajusta el tamaño máximo del video */
-    height: auto;
-    border-radius: 15px; /* Opcional: bordes redondeados para el video */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra alrededor del video */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 960px; /* Ajusta el tamaño máximo del video según el diseño */
+    height: 540px; /* Ajusta la altura del video */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del video */
+
 }
 #message-container {
     margin-top: 20px;
