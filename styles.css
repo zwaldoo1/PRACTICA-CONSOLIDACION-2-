@@ -36,9 +36,9 @@ p {
 .img-fluid {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    max-width: 100px; /* ajusta el ancho máximo de la imagen */
-    height: 230px; /* ajusta la altura automáticamente */
-    width: 230px;
+    max-width: 70px; /* ajusta el ancho máximo de la imagen */
+    height: 100px; /* ajusta la altura automáticamente */
+    width: 100px;
     object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
     display: block;
     margin: 0 auto;
