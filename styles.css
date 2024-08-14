@@ -36,9 +36,9 @@ p {
 .img-fluid {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    max-width: 70px; /* ajusta el ancho máximo de la imagen */
-    height: 100px; /* ajusta la altura automáticamente */
-    width: 100px;
+    max-width: 140px; /* ajusta el ancho máximo de la imagen */
+    height: 200px; /* ajusta la altura automáticamente */
+    width: 200px;
     object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
     display: block;
     margin: 0 auto;
@@ -297,4 +297,102 @@ body {
     width: 10%;
     height: auto; /* Mantiene la proporción de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre cada skill */
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skill {
+    flex: 1;
+    min-width: 120px; /* Ajusta según el tamaño que desees */
+    max-width: 150px;
+}
+
+.skill img {
+    max-width: 100%; /* Imagen adaptativa */
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333; /* Cambia el color según el tema de tu sitio */
+}
+.skill img {
+    background-color: #ffffff; /* Cambia esto por el color del fondo de la sección */
+    padding: 10px;
+    border-radius: 8px; /* Opcional */
+}
+.skills-container .skill img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    background-color: transparent; /* Asegúrate de que no haya ningún fondo aplicado */
+    padding: 10px; /* Ajuste opcional para agregar algo de espacio alrededor del logo */
+    border-radius: 50%; /* Esto asegurará que la imagen se vea circular si lo deseas */
+}
+/* Estilo general para la sección de habilidades */
+#skills {
+    background-color: #f8f9fa; /* Fondo claro para que las imágenes se vean mejor */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+}
+
+/* Estilo para los contenedores de las habilidades */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    text-align: center;
+    margin: 10px;
+    width: 150px; /* Ajusta el tamaño del contenedor de la habilidad */
+}
+
+.skill img {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    background-color: transparent; /* Asegúrate de que el fondo sea transparente */
+}
+
+.skill p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.skills-container .skill {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skills-container .skill:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.skills-container .skill img {
+    max-width: 100px; /* Ajusta el tamaño de los logos si es necesario */
+    margin-bottom: 10px;
+}
+/* Estilo para el texto del título "Habilidades" */
+#skills h2 {
+    color: #ec8510; /* Cambia este valor al color que prefieras */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para las imágenes de habilidades sin borde circular */
+.skills-container .skill img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    border-radius: 0; /* Asegúrate de que las esquinas no estén redondeadas */
+    display: block;
+    margin: 0 auto;
 }

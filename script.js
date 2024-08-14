@@ -6,4 +6,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     var message = document.getElementById('message').value;
     console.log(`Nombre: ${name}, Email: ${email}, Mensaje: ${message}`);
     // Aquí puedes agregar la lógica para enviar el formulario
+});document.querySelector('.float-icon').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
