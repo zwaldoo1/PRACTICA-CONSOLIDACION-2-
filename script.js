@@ -13,3 +13,14 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         behavior: 'smooth'
     });
 });
+document.getElementById('cv-download').addEventListener('click', function(event) {
+    event.preventDefault(); // prevent the link from following its href
+    var messageContainer = document.getElementById('message-container');
+    messageContainer.textContent = 'Disponible próximamente';
+    messageContainer.style.display = 'block';
+    
+    // hide the message after 3 seconds
+    setTimeout(function() {
+      messageContainer.style.display = 'none';
+    }, 3000);
+  });
