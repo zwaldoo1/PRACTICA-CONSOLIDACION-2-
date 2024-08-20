@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    padding-top: 70px; /* Ajusta según la altura de tu navbar */
+    padding-top: 40px; /* Ajusta según la altura de tu navbar */
     background: linear-gradient(45deg, #f36302 0%, #fa744e 99%, #e7795b 100%);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
