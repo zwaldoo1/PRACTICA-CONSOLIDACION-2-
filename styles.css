@@ -254,6 +254,42 @@ body {
     height: 100vh;
     z-index: -1;
 }
+.qr-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+.qr-container img {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    cursor: pointer;
+    background: none; /* Elimina el fondo blanco */
+}
+
+.qr-container p {
+    margin-top: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.float-icon {
+    position: fixed;
+    bottom: 130px; /* Ajusta según el tamaño del QR */
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.float-icon i {
+    font-size: 20px;
+}
 
 #message-container {
     position: fixed;
@@ -262,6 +298,21 @@ body {
     right: 0;
     z-index: 9999;
     text-align: center;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Cambia el color al pasar el cursor */
 }
 
 /* Icono flotante */
@@ -381,4 +432,60 @@ body {
     max-width: 100px; /* Ajusta según sea necesario */
     height: auto;
     background: transparent; /* Asegura que no haya fondo detrás de la imagen */
+}
+/* Estilo para el contenedor del QR */
+.qr-container {
+    position: fixed; /* Mantiene el QR en una posición fija */
+    bottom: 10px; /* Ajusta la posición desde la parte inferior */
+    right: 10px; /* Mantiene la posición desde la derecha */
+    text-align: center;
+}
+
+/* Estilo para la imagen del QR */
+.qr-container img {
+    width: 80px; /* Tamaño base del QR reducido */
+    opacity: 0.85; /* Menos transparencia */
+    cursor: pointer;
+    background: none; /* Elimina el fondo blanco */
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto al pasar el mouse sobre la imagen del QR */
+.qr-container img:hover {
+    transform: scale(1.2); /* Aumentar tamaño al pasar el mouse */
+    opacity: 1; /* Sin transparencia */
+}
+
+/* Estilo para la flecha azul */
+.float-icon {
+    position: fixed; /* Mantiene la flecha en una posición fija */
+    bottom: 140px; /* Mueve la flecha más arriba para evitar superposición */
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre la flecha azul */
+.float-icon:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+.footer {
+    background-color: #0306a3; /* Color de fondo */
+    color: #333; /* Color del texto */
+    position: relative; /* Asegura que el footer no se superponga */
+    bottom: 0; /* Posición en la parte inferior */
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.footer p {
+    margin: 0; /* Quitar margen por defecto */
 }
