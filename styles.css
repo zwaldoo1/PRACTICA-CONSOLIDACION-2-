@@ -313,18 +313,19 @@ body {
 }
 .social-icons {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    justify-content: flex-end; /* Alinear a la derecha */
+    margin-top: 20px; /* Ajusta el margen según sea necesario */
 }
 
 .social-icons a {
-    color: #000;
-    font-size: 46px;
-    transition: color 0.3s ease;
+    margin: 0 10px; /* Espaciado entre los íconos */
+    font-size: 50px; /* Ajusta el tamaño de los íconos si es necesario */
+    color: #000; /* Cambia el color según sea necesario */
+    transition: color 0.3s; /* Agrega una transición suave */
 }
 
 .social-icons a:hover {
-    color: #007bff; /* Cambia el color al pasar el cursor */
+    color: #007bff; /* Cambia el color al pasar el mouse */
 }
 
 /* Icono flotante */
@@ -549,6 +550,35 @@ footer {
     width: 100%; /* Que ocupe todo el ancho */
     bottom: 0; /* Posición al fondo de la página */
   }
+  footer {
+    background-color: #333; /* Cambia el color de fondo según sea necesario */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 20px;
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    align-items: center; /* Centrar horizontalmente los elementos */
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex; /* Usar flexbox para los íconos */
+    justify-content: center; /* Centrar los íconos horizontalmente */
+}
+
+.social-icon {
+    color: #fff; /* Color de los íconos */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px; /* Tamaño de los íconos */
+    transition: transform 0.2s; /* Efecto de transición */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
+}
+
+
   #sobre-mi {
     padding: 50px;
     text-align: center;
