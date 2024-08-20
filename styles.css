@@ -319,7 +319,7 @@ body {
 
 .social-icons a {
     color: #000;
-    font-size: 24px;
+    font-size: 46px;
     transition: color 0.3s ease;
 }
 
@@ -530,3 +530,42 @@ body {
 #about {
     padding-top: 20px; /* Ajusta este valor según sea necesario */
 }
+/* Estilo por defecto (modo claro) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    font-size: 14px; /* Tamaño de la fuente */
+    position: static; /* Fijar el footer al fondo de la página */
+    width: 100%; /* Que ocupe todo el ancho */
+    bottom: 0; /* Posición al fondo de la página */
+  }
+  #sobre-mi {
+    padding: 50px;
+    text-align: center;
+}
+
+.texto-con-fondo {
+    background-color: rgba(63, 233, 29, 0.253); /* Fondo con transparencia */
+    color: #fff; /* Color del texto */
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efecto difuminado alrededor */
+    backdrop-filter: blur(10px); /* Difuminado del fondo detrás */
+    transition: background-color 0.5s ease;
+}
+
+.texto-con-fondo:hover {
+    background-color: rgba(43, 32, 201, 0.432); /* Cambia ligeramente el color al pasar el mouse */
+}
+
+
