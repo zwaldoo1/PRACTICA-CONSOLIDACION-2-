@@ -14,24 +14,30 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     });
 });
 document.getElementById('cv-download').addEventListener('click', function(event) {
-    event.preventDefault(); // prevent the link from following its href
-    var messageContainer = document.getElementById('message-container');
-    messageContainer.textContent = 'Disponible próximamente';
-    messageContainer.style.display = 'block';
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    
+    event.preventDefault(); // Evitar que el enlace siga su href
+
+    // Cambia esta URL a la ruta donde tienes almacenado tu CV
+    const cvUrl = 'https://tuservidor.com/path/to/CV_FRANCISCO_OJEDA.pdf'; 
+
+    // Crear un enlace temporal para descargar el archivo
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'CV_FRANCISCO_OJEDA.pdf'; // Cambia esto por el nombre que deseas que tenga el archivo
+
+    // Agregar el enlace al documento y hacer clic en él
+    document.body.appendChild(link);
+    link.click();
+
+    // Eliminar el enlace temporal del documento
+    document.body.removeChild(link);
+});
+
+
     // hide the message after 3 seconds
     setTimeout(function() {
       messageContainer.style.display = 'none';
     }, 3000);
-  });
+
   // Desplazamiento suave
 document.querySelectorAll('a.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

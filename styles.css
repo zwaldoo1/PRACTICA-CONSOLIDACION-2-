@@ -575,7 +575,7 @@ footer {
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* Efecto al pasar el mouse */
+    transform: scale(1.5); /* Efecto al pasar el mouse */
 }
 
 
