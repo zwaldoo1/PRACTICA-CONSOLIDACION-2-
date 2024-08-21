@@ -312,9 +312,9 @@ body {
     text-align: center;
 }
 .social-icons {
-    display: flex;
-    justify-content: flex-end; /* Alinear a la derecha */
-    margin-top: 20px; /* Ajusta el margen según sea necesario */
+    float: right; /* O usa 'float: right;' */
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    margin-top: 1rem; /* Espaciado superior */
 }
 
 .social-icons a {
@@ -487,7 +487,7 @@ body {
 
 /* Efecto al pasar el mouse sobre la flecha azul */
 .float-icon:hover {
-    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+    background-color: #0057b383; /* Cambia el color al pasar el mouse */
 }
 .footer {
     background-color: #7a0000; /* Color de fondo */
@@ -542,7 +542,7 @@ body {
 }
 footer {
     background-color: #333; /* Color de fondo del footer */
-    color: #fff; /* Color del texto */
+    color: #0b1aee; /* Color del texto */
     text-align: center; /* Centrar el texto */
     padding: 10px 0; /* Espaciado superior e inferior */
     font-size: 14px; /* Tamaño de la fuente */
@@ -552,7 +552,7 @@ footer {
   }
   footer {
     background-color: #333; /* Cambia el color de fondo según sea necesario */
-    color: #fff; /* Color del texto */
+    color: #0921f3; /* Color del texto */
     text-align: center;
     padding: 20px;
     display: flex; /* Usar flexbox */
@@ -595,7 +595,40 @@ footer {
 }
 
 .texto-con-fondo:hover {
-    background-color: rgba(43, 32, 201, 0.432); /* Cambia ligeramente el color al pasar el mouse */
+    background-color: rgba(190, 190, 190, 0.664); /* Cambia ligeramente el color al pasar el mouse */
+}
+#map-container {
+    height: 300px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+#map-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+#text-box {
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: rgba(10, 26, 165, 0.568);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+#text-box p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.social-icons-bottom {
+    display: flex;
+    justify-content: center; /* Alinea los íconos al centro */
+    margin-top: 1rem; /* Espaciado superior */
+}
 
