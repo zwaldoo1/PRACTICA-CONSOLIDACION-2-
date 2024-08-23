@@ -96,7 +96,7 @@ body {
 /* Estilos para la sección de habilidades */
 
 .skills {
-    background-color: #f7f7f7;
+    background-color: #f37a09e0;
     padding: 2rem;
 }
 
@@ -312,7 +312,7 @@ body {
     text-align: center;
 }
 .social-icons {
-    float: right; /* O usa 'float: right;' */
+    display: flex; /* O usa 'float: right;' */
     justify-content: flex-end; /* Alinea los íconos a la derecha */
     margin-top: 1rem; /* Espaciado superior */
 }
@@ -320,11 +320,11 @@ body {
 .social-icons a {
     margin: 0 10px; /* Espaciado entre los íconos */
     font-size: 50px; /* Ajusta el tamaño de los íconos si es necesario */
-    color: #000; /* Cambia el color según sea necesario */
+    color: #ffffff; /* Cambia el color según sea necesario */
     transition: color 0.3s; /* Agrega una transición suave */
 }
 
-.social-icons a:hover {
+.social-icons :hover {
     color: #007bff; /* Cambia el color al pasar el mouse */
 }
 
@@ -416,7 +416,7 @@ body {
 
 /* Opcional: Ajustar el tamaño de los controles del carrusel */
 .carousel-control-prev, .carousel-control-next {
-    width: 5%; /* Ajusta el ancho de los controles */
+    width: 30%; /* Ajusta el ancho de los controles */
 }
 /* Contenedor del carrusel */
 #profileCarousel {
@@ -472,7 +472,7 @@ body {
 /* Estilo para la flecha azul */
 .float-icon {
     position: fixed; /* Mantiene la flecha en una posición fija */
-    bottom: 140px; /* Mueve la flecha más arriba para evitar superposición */
+    bottom: 30px; /* Mueve la flecha más arriba para evitar superposición */
     right: 10px;
     background-color: #333;
     color: white;
@@ -563,7 +563,7 @@ footer {
 .social-icons {
     margin-top: 10px;
     display: flex; /* Usar flexbox para los íconos */
-    justify-content: center; /* Centrar los íconos horizontalmente */
+    justify-content: flex-end; /* Centrar los íconos horizontalmente */
 }
 
 .social-icon {
@@ -624,7 +624,7 @@ footer {
 #text-box p {
     margin: 0;
     padding: 5px 0;
-    font-size: 16px;
+    font-size: 10px;
 }
 .social-icons-bottom {
     display: flex;
