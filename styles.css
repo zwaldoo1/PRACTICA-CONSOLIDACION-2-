@@ -655,4 +655,30 @@ footer {
 #about {
     overflow: hidden; /* Oculta el contenido que sale de los límites */
 }
+#perfil-profesional {
+    background-color: #1f150294; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
 
+.card-title {
+    color: #007bff; /* Color del título en la tarjeta */
+}
+
+.card-text {
+    color: #555; /* Color del texto en la tarjeta */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color del botón */
+}
+.card-img-top {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-height: 300px; /* Altura máxima para limitar el tamaño */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+.text-sobre-mi {
+    color: #ffffff;
+}
