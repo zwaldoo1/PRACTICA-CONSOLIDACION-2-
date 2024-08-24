@@ -682,3 +682,13 @@ footer {
 .text-sobre-mi {
     color: #ffffff;
 }
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px; /* Espaciado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el contenedor */
+    height: 400px; /* Ajusta la altura de las imágenes */
+}
