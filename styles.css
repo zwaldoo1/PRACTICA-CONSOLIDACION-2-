@@ -7,7 +7,7 @@ body {
     padding: 0;
     height: 100%;
     padding-top: 40px; /* Ajusta según la altura de tu navbar */
-    background: linear-gradient(45deg, #f36302 0%, #fa744e 99%, #e7795b 100%);
+    background: linear-gradient(45deg, #c4bab4 0%, #fa744e 99%, #e7795b 100%);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
 }
@@ -592,6 +592,9 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efecto difuminado alrededor */
     backdrop-filter: blur(10px); /* Difuminado del fondo detrás */
     transition: background-color 0.5s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .texto-con-fondo:hover {
@@ -630,5 +633,26 @@ footer {
     display: flex;
     justify-content: center; /* Alinea los íconos al centro */
     margin-top: 1rem; /* Espaciado superior */
+}
+.texto-con-fondo {
+    position: relative;
+    animation: slide-in 1s ease forwards;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%); /* Comienza desde la izquierda */
+        opacity: 0; /* Inicialmente invisible */
+    }
+    100% {
+        transform: translateX(0); /* Finaliza en su lugar */
+        opacity: 1; /* Se vuelve visible */
+    }
+}
+
+/* Estilos adicionales para el contenedor */
+#about {
+    overflow: hidden; /* Oculta el contenido que sale de los límites */
 }
 

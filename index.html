@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -55,7 +58,7 @@
 
         <!-- Redes sociales -->
 
-        <div class="social-icons mt-3">
+        <div class="social-icons mt-3" data-aos="fade-up">
             <a href="https://www.instagram.com/zw4ld00/" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
@@ -71,7 +74,7 @@
         </div>
     
 <!-- Inicio del carrusel -->
-<div id="profileCarousel" class="carousel slide" data-ride="carousel">
+<div id="profileCarousel" class="carousel slide" data-ride="carousel" data-aos="flip-left">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="img/IMAGEN3.jpg" class="d-block w-100" alt="Foto de perfil 1">
@@ -95,10 +98,10 @@
 <!-- Fin del carrusel -->
 
         
-        <a href="cv/Francisco_Ojeda_CV.pdf" id="cv-download" class="btn btn-primary mt-3" download>Descargar CV</a>
+        <a href="cv/Francisco_Ojeda_CV.pdf" id="cv-download" class="btn btn-primary mt-3" date-aos="zoom-in" download>Descargar CV</a>
     </section>
     
-    <section id="skills" class="container mt-5">
+    <section id="skills" class="container mt-5" data-aos="zoom-in">
         <h2>Habilidades</h2>
         <div class="skills-container">
             <div class="skill">
@@ -129,8 +132,7 @@
     </section>
     
 
-
-    <section id="projects" class="container mt-5">
+    <section id="projects" class="container mt-5" data-aos="fade-up">
         <h2>Proyectos</h2>
         <div class="row">
             <div class="col-md-4">
@@ -155,21 +157,22 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Siguiente</span>
                         </a>
-                        <div class="description">
-                            <h3>Weather App</h3>
-                            <p>Una aplicación del clima que consume una API externa para mostrar el clima actual de cualquier ciudad.</p>
-                            <button class="btn btn-secondary" data-toggle="collapse" data-target="#moreContent">Ver más</button>
-                            
-                            <!-- Contenido adicional -->
-                            <div id="moreContent" class="collapse">
-                                <p>Este es un proyecto interesante que incluye características como la predicción del clima y la visualización de datos meteorológicos históricos.</p>
-                            </div>
-                            
-                            <a href="https://github.com/zwaldoo1/PRACTICA-CONSOLIDACION-2-" class="btn btn-link">Ver en GitHub</a>
+                    </div>
+                    <div class="description" style="background-color: #0b60aa8e; padding: 10px; margin-top: 10px;">
+                        <h3>To-Do List</h3>
+                        <p>Una aplicación para gestionar listas de tareas.</p>
+                        <button class="btn btn-secondary" data-toggle="collapse" data-target="#moreContent1">Ver más</button>
+    
+                        <!-- Contenido adicional -->
+                        <div id="moreContent1" class="collapse">
+                            <p>Este proyecto permite a los usuarios agregar, editar y eliminar tareas de manera sencilla y eficiente.</p>
                         </div>
-                        
+    
+                        <a href="https://github.com/zwaldoo1/PRACTICA-CONSOLIDACION-2-" class="btn btn-link">Ver en GitHub</a>
+                    </div>
                 </div>
             </div>
+    
             <div class="col-md-4">
                 <div class="project-card">
                     <div id="carouselProject2" class="carousel slide" data-ride="carousel">
@@ -193,14 +196,21 @@
                             <span class="sr-only">Siguiente</span>
                         </a>
                     </div>
-                    <div class="description" style="background-color: #0b60aa8e;  padding: 10px; margin-top: 10px;">
+                    <div class="description" style="background-color: #0b60aa8e; padding: 10px; margin-top: 10px;">
                         <h3>Landing Page</h3>
                         <p>Una landing page moderna y responsiva diseñada para una pequeña empresa.</p>
-                        <button class="btn btn-secondary">Ver más</button>
+                        <button class="btn btn-secondary" data-toggle="collapse" data-target="#moreContent2">Ver más</button>
+    
+                        <!-- Contenido adicional -->
+                        <div id="moreContent2" class="collapse">
+                            <p>Este proyecto destaca por su diseño elegante y su compatibilidad con dispositivos móviles.</p>
+                        </div>
+    
                         <a href="https://github.com/zwaldoo1/PRACTICA-CONSOLIDACION-2-" class="btn btn-link">Ver en GitHub</a>
                     </div>
                 </div>
             </div>
+    
             <div class="col-md-4">
                 <div class="project-card">
                     <div id="carouselProject3" class="carousel slide" data-ride="carousel">
@@ -224,27 +234,35 @@
                             <span class="sr-only">Siguiente</span>
                         </a>
                     </div>
-                    <div class="description" style="background-color: #0b60aa8e; ; padding: 10px; margin-top: 10px;">
+                    <div class="description" style="background-color: #0b60aa8e; padding: 10px; margin-top: 10px;">
                         <h3>Weather App</h3>
                         <p>Una aplicación del clima que consume una API externa para mostrar el clima actual de cualquier ciudad.</p>
-                        <button class="btn btn-secondary">Ver más</button>
+                        <button class="btn btn-secondary" data-toggle="collapse" data-target="#moreContent3">Ver más</button>
+    
+                        <!-- Contenido adicional -->
+                        <div id="moreContent3" class="collapse">
+                            <p>Este proyecto incluye características como la predicción del clima y la visualización de datos meteorológicos históricos.</p>
+                        </div>
+    
                         <a href="https://github.com/zwaldoo1/PRACTICA-CONSOLIDACION-2-" class="btn btn-link">Ver en GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    </section>
     <div id="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4662.478556158343!2d-72.61166554792787!3d-38.74463843314907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d3d9a2311e55%3A0xb33d64abb53f9604!2sTemuco!5e0!3m2!1ses-419!2scl!4v1724196535415!5m2!1ses-419!2scl" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4662.478556158343!2d-72.61166554792787!3d-38.74463843314907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d3d9a2311e55%3A0xb33d64abb53f9604!2sTemuco!5e0!3m2!1ses-419!2scl!4v1724196535415!5m2!1ses-419!2scl" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"data-aos="fade-down"></iframe>
         
         <!-- Cuadro de texto -->
-        <div id="text-box">
+        <div id="text-box" data-aos="fade-down">
             <p>Conoce la ubicacion de nuestras oficinas</p>
             <p>Visítanos para más detalles.</p>
         </div>
     </div>
     
-    <section id="contact" class="container mt-5">
+    <section id="contact" class="container mt-5"data-aos="flip-left">
         <h2>Contacto</h2>
         <form id="contactForm">
             <div class="form-group">
@@ -435,6 +453,14 @@
             <a href="https://www.linkedin.com/in/francisco-ojeda-64328324b/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </footer>
+    <script>
+        AOS.init({
+            duration: 1500, // Duración de la animación en milisegundos (1.5 segundos)
+            easing: 'ease-in-out', // Efecto de transición
+            once: false, // Si la animación debe ocurrir solo una vez
+        });
+    </script>
+    
     
       
 </body>

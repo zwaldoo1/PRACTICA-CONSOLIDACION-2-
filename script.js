@@ -245,3 +245,32 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var textoConFondo = document.querySelector('.texto-con-fondo');
+    textoConFondo.classList.add('visible');
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // Scroll effect for the navbar
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Smooth scrolling for anchor links
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+});
+window.addEventListener('load', function() {
+    const messageContainer = document.getElementById('message-container');
+    messageContainer.style.animation = 'slideIn 1s forwards';
+});
